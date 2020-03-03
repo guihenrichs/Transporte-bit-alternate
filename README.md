@@ -20,3 +20,7 @@ Este comando retornará a versão do python que está instalada em sua máquina.
 
 - Para Linux:  
 Neste sistema operacional o python já vem habilitado não necessitando de instalação.
+
+## Running the tests
+### No Windows
+

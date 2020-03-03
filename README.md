@@ -25,12 +25,23 @@ Neste sistema operacional o python já vem habilitado não necessitando de insta
 ## Descrição do programa
 O protocolo foi implementado sobre sockets UDP. Ele possui um nível de aplicação  a transferência de dados que não está disponível neste protocolo de transporte.  
 O projeto contem dois aquivos escritos na linguagem python: sender.py e receiver.py. Estes arquivos rodam tanto no sistema operacional Linux quanto em Windows.  
-O arquivo sender recebe 3 argumentos de linha de comando: IP do receiver aonde fará um ping no servidor para saber se o host existe. Porta no receiver que deverá ser um numero inteiro entre 10001 e 11000. E quantidade de mensagens a serem enviadas podendo ser qualquer numero inteiro. Qualquer argumento que não seja valido o programa exibe um erro ao usuário.  
-O sender ua um único socket UDP para enviar as mensagens no seguinte formato SEQNO DATA MSGS, AONDE:  
+O arquivo **SENDER** recebe três argumentos de linha de comando: IP do receiver aonde fará um ping no servidor para saber se o host existe. Porta no receiver que deverá ser um numero inteiro entre 10001 e 11000. E quantidade de mensagens a serem enviadas podendo ser qualquer numero inteiro. Qualquer argumento que não seja valido o programa exibe um erro ao usuário.  
+O sender usa um único socket UDP para enviar as mensagens no seguinte formato SEQNO DATA MSGS, AONDE:  
 1. SEQNO é o número de sequência do pacote tendo o valor 0 ou 1.  
 2. DATA são números começando em um e incrementando até a quantidade definida pelo usuário em MSGS.  
 3. MSGS que é o número todal de mensagens a serem enviadas.  
-
+Este programa usa um timeout de 1 segundo para retransmissão de mensagens caso o sender não receba o ACK de identificação da mensagem.  
+O programa é encerrado quando o ACK para a última mensagem é recebido.  
+Para cada mensagem trocado, o sender imprime as seguintes mensagens no terminal:  
+SENT: mensagem que foi enviada  
+RECV: mensagem que foi recebida ou timeout  
+O arquivo **RECEIVER** recebe um argumento que é o número da porta onde ele espera pela mensagem. Este arquivo deverá ser um numero inteiro entre 10001 e 11000.  
+O receiver envia uma mensagem de ACK no formato ACK ACKno, onde ACKno é o número da mensagem sendo reconhecida.  
+O receiver identifica o número de mensagens únicas que irá tratar através do campo MSGS no pacote enviado pelo sender.  
+O receiver encerra a execução quando recebe a última mensagem do sender.  
+O receiver imprime as seguintes mensagens no termincal:
+RECV: mensagem recebida
+SENT: mensagem enviada
 
 ## Rodando os testes
 ### No Windows

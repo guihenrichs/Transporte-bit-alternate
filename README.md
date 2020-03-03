@@ -8,7 +8,15 @@ Para executar o projeto, será necessário os seguintes programas:
 
 ## Installing
 - Para Windows:  
-Inicialmente deverá fazer o download da versão mais recente do Python acessando a página https://www.python.org/downloads/
-Após o download realizado, fazer a instalação do programa.
+Inicialmente deverá fazer o download da versão mais recente do Python acessando a página https://www.python.org/downloads/  
+Em seguida, você precisa executar o instalador baixado.  
+A primeira tela do instalador, nos oferece a opção de adicionar o python 3.7 na variável de ambiente PATH.  
+Marcar essa opção significa que o comando python poderá ser executado pela linha de comandos. 
+Após marcar essa opção clicar na opção Install Now.  
+Após a instalação concluir, basta clicar no botão Close e acabou! O python já estará instalado no seu Windows.  
+Para verificar se a instalação do Python foi bem-sucedida, pesquise no menu iniciar por "cmd" e clique duas vezes para abri-lo.  
+Digite o seguinte comando: python -- version  
+Este comando retornará a versão do python que está instalada em sua máquina.
+
 - Para Linux:  
 Neste sistema operacional o python já vem habilitado não necessitando de instalação.

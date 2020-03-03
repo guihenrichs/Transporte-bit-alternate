@@ -5,3 +5,9 @@ Neste projeto foi implementado o protocolo de transferência confiável de dados
 Para executar o projeto, será necessário os seguintes programas:
 - Python 3.8.2
 - Prompt de Comando
+
+## Installing
+- Para Windows:
+  Inicialmente deverá fazer o download da versão mais recente do Python acessando a página https://www.python.org/downloads/
+- Para Linux:
+  Neste sistema operacional o python já vem habilitado não necessitando de instalação.

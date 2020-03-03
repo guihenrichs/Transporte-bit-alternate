@@ -30,6 +30,7 @@ O sender usa um único socket UDP para enviar as mensagens no seguinte formato S
 1. SEQNO é o número de sequência do pacote tendo o valor 0 ou 1.  
 2. DATA são números começando em um e incrementando até a quantidade definida pelo usuário em MSGS.  
 3. MSGS que é o número todal de mensagens a serem enviadas.  
+
 Este programa usa um timeout de 1 segundo para retransmissão de mensagens caso o sender não receba o ACK de identificação da mensagem.  
 O programa é encerrado quando o ACK para a última mensagem é recebido.  
 Para cada mensagem trocado, o sender imprime as seguintes mensagens no terminal:  
@@ -39,8 +40,8 @@ O arquivo **RECEIVER** recebe um argumento que é o número da porta onde ele es
 O receiver envia uma mensagem de ACK no formato ACK ACKno, onde ACKno é o número da mensagem sendo reconhecida.  
 O receiver identifica o número de mensagens únicas que irá tratar através do campo MSGS no pacote enviado pelo sender.  
 O receiver encerra a execução quando recebe a última mensagem do sender.  
-O receiver imprime as seguintes mensagens no termincal:
-RECV: mensagem recebida
+O receiver imprime as seguintes mensagens no termincal:  
+RECV: mensagem recebida  
 SENT: mensagem enviada
 
 ## Rodando os testes

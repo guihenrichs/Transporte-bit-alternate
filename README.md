@@ -22,13 +22,23 @@ Este comando retornará a versão do python que está instalada em sua máquina.
 - Para Linux:  
 Neste sistema operacional o python já vem habilitado não necessitando de instalação.
 
+## Descrição do programa
+O protocolo foi implementado sobre sockets UDP. Ele possui um nível de aplicação  a transferência de dados que não está disponível neste protocolo de transporte.  
+O projeto contem dois aquivos escritos na linguagem python: sender.py e receiver.py. Estes arquivos rodam tanto no sistema operacional Linux quanto em Windows.  
+O arquivo sender recebe 3 argumentos de linha de comando: IP do receiver aonde fará um ping no servidor para saber se o host existe. Porta no receiver que deverá ser um numero inteiro entre 10001 e 11000. E quantidade de mensagens a serem enviadas podendo ser qualquer numero inteiro. Qualquer argumento que não seja valido o programa exibe um erro ao usuário.  
+O sender ua um único socket UDP para enviar as mensagens no seguinte formato SEQNO DATA MSGS, AONDE:  
+1. SEQNO é o número de sequência do pacote tendo o valor 0 ou 1.  
+2. DATA são números começando em um e incrementando até a quantidade definida pelo usuário em MSGS.  
+3. MSGS que é o número todal de mensagens a serem enviadas.  
+
+
 ## Rodando os testes
 ### No Windows
 Copie e cole o arquivo sender.py e receiver.py na sua Área de Trabalho. O arquivo receiver.py pode ser enviado para uma máquina virtualizada ou até mesmo para outra máquina desde que estas estejam conectadas na internet.  
 Pesquise no menu iniciar por "cmd" e clique duas vezes para abri-lo.  
-Digite o seguinte comando: ipconfig. Este comando irá fornecer o IP da sua máquina caso rode o arquivo sender.py nela ou o IP do servidor. Anote a IP do servidor no campo Endereço IPv4.  
-Agora, digite o seguinte comando: cd Desktop. Isto irá direcionar o pasta Desktop no seu prompt de comando.  
-Abra outra tela do prompt de comando. Nesta outra tela digite o comando: cd Desktop. Caso seja feita em outro servidor, cole o arquivo receiver.py no desktop deste servidor. Abra o prompt de comando e solicite o ip enviando o comando ipconfig e anote o IP deste servidor.  
+Digite o seguinte comando: ipconfig. Este comando irá fornecer o IP desta máquina.  
+Agora, digite o seguinte comando: cd Desktop. Isto irá direcionar a pasta Desktop no seu prompt de comando.  
+Abra outra tela do prompt de comando. Nesta outra tela digite o comando: cd Desktop. Caso seja feita em outro servidor, cole o arquivo receiver.py no desktop deste servidor. Abra o prompt de comando e solicite o ip enviando o comando ipconfig e anote o IP desta máquina.  
 Na tela do servidor, digite o comando: receiver.py. Em seguida escolha a porta. Este valor deverá ser entre 10001 e 11000.  
 Pronto, o servidor estará aguardando pela mensagem recebida.  
 Na tela do sender, digite o seguinte comando: sender.py. Em seguida, digite o IP do seu servidor, você irá vizualizar o ping no servidor para saber se o host existe. Após o IP, digite a porta (esta deverá ter o mesmo valor escolhido no servidor. Valor deverá ser entre 10001 e 11000). Agora digite a quantidade de mensagens que o sender enviará para o receiver.  

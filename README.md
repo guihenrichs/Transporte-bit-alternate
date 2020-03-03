@@ -8,6 +8,7 @@ Para executar o projeto, será necessário os seguintes programas:
 
 ## Installing
 - Para Windows:
-  Inicialmente deverá fazer o download da versão mais recente do Python acessando a página https://www.python.org/downloads/
+Inicialmente deverá fazer o download da versão mais recente do Python acessando a página https://www.python.org/downloads/
+Após o download realizado, fazer a instalação do programa.
 - Para Linux:
-  Neste sistema operacional o python já vem habilitado não necessitando de instalação.
+Neste sistema operacional o python já vem habilitado não necessitando de instalação.

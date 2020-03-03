@@ -1,12 +1,13 @@
 # Tansporte-bit-alternate
 Neste projeto foi implementado o protocolo de transferência confiável de dados. Foi criado um arquivo sender e um receiver baseados na máquina de estados do protocolo em sua última variação rtd3.0. Neste projeto não foi implementado o checksum.
 
-## Getting started
+## Guia de Introdução 
 Para executar o projeto, será necessário os seguintes programas:
 - Python 3.8.2
-- Prompt de Comando
+- Prompt de Comando do Windows
+- Terminal do Linux
 
-## Installing
+### Instação
 - Para Windows:  
 Inicialmente deverá fazer o download da versão mais recente do Python acessando a página https://www.python.org/downloads/  
 Em seguida, você precisa executar o instalador baixado.  
@@ -21,6 +22,6 @@ Este comando retornará a versão do python que está instalada em sua máquina.
 - Para Linux:  
 Neste sistema operacional o python já vem habilitado não necessitando de instalação.
 
-## Running the tests
+## Rodando os testes
 ### No Windows
 

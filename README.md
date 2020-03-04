@@ -14,7 +14,7 @@ O arquivo **SENDER** recebe três argumentos de linha de comando: IP do receiver
 O sender usa um único socket UDP para enviar as mensagens no seguinte formato SEQNO DATA MSGS, aonde:  
 1. SEQNO é o número de sequência do pacote tendo o valor 0 ou 1.  
 2. DATA são números começando em um e incrementando até a quantidade definida pelo usuário em MSGS.  
-3. MSGS que é o número todal de mensagens a serem enviadas.  
+3. MSGS que é o número todal de até 9 mensagens a serem enviadas.  
 
 Este programa usa um timeout de 1 segundo para retransmissão de mensagens caso o sender não receba o ACK de identificação da mensagem.  
 O programa é encerrado quando o ACK para a última mensagem é recebido.  

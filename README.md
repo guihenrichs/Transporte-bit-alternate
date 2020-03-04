@@ -53,7 +53,7 @@ Agora, digite o seguinte comando: cd Desktop. Isto irá direcionar a pasta Deskt
 Abra outra tela do prompt de comando. Nesta outra tela digite o comando: cd Desktop. Caso seja feita em outro servidor, cole o arquivo receiver.py no desktop deste servidor. Abra o prompt de comando e solicite o ip enviando o comando ipconfig e anote o IP desta máquina.  
 Na tela do servidor, digite o comando: receiver.py. Em seguida escolha a porta. Este valor deverá ser entre 10001 e 11000.  
 Pronto, o servidor estará aguardando pela mensagem recebida.  
-Na tela do sender, digite o seguinte comando: sender.py. Em seguida, digite o IP do seu servidor, você irá vizualizar o ping no servidor para saber se o host existe. Após o IP, digite a porta (esta deverá ter o mesmo valor escolhido no servidor. Valor deverá ser entre 10001 e 11000). Agora digite a quantidade de mensagens que o sender enviará para o receiver.  
+Na tela do sender, digite o seguinte comando: sender.py. Em seguida, digite o IP do seu servidor, você irá vizualizar o ping no servidor para saber se o host existe. Após o IP, digite a porta (esta deverá ter o mesmo valor escolhido no servidor. Valor deverá ser entre 10001 e 11000). Agora digite a quantidade de até 9 mensagens que o sender enviará para o receiver.  
 Após feito isto, você irá vizualizar o sender enviando a mensagem e recebendo o ACK até a quantidade escolhida, caso o servidor não esteje com o prompt aberto ou não ter perdido a conexão, você irá perceber a mensagem de TIMEOUT até que a conexão seja restabelecida.  
 Na tela do servidor, você irá vizualizar o receiver recebendo e enviando o ACK da mensagem.  
 
@@ -65,7 +65,7 @@ Agora, digite o seguinte comando: cd Desktop. Isto irá direcionar a pasta Deskt
 Abra outra tela do terminal. Nesta outra tela digite o comando: cd Desktop. Caso seja feita em outro servidor, cole o arquivo receiver.py no desktop deste servidor. Abra o terminal e solicite o ip enviando o comando ifconifg e anote o IP desta máquina.  
 Na tela do servidor, digite o comando: python receiver.py. Em seguida escolha a porta. Este valor deverá ser entre 10001 e 11000.  
 Pronto, o servidor estará aguardando pela mensagem recebida.  
-Na tela do sender, digite o seguinte comando: python sender.py. Em seguida, digite o IP do seu servidor, você irá vizualizar o ping no servidor para saber se o host existe. Após o IP, digite a porta (esta deverá ter o mesmo valor escolhido no servidor. Valor deverá ser entre 10001 e 11000). Agora digite a quantidade de mensagens que o sender enviará para o receiver.  
+Na tela do sender, digite o seguinte comando: python sender.py. Em seguida, digite o IP do seu servidor, você irá vizualizar o ping no servidor para saber se o host existe. Após o IP, digite a porta (esta deverá ter o mesmo valor escolhido no servidor. Valor deverá ser entre 10001 e 11000). Agora digite a quantidade de até 9 mensagens que o sender enviará para o receiver.  
 Após feito isto, você irá vizualizar o sender enviando a mensagem e recebendo o ACK até a quantidade escolhida, caso o servidor não esteje com o terminal aberto ou não ter perdido a conexão, você irá perceber a mensagem de TIMEOUT até que a conexão seja restabelecida.  
 Na tela do servidor, você irá vizualizar o receiver recebendo e enviando o ACK da mensagem. 
 
